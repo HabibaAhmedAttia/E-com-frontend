@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "app-1": {
+
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -12,6 +13,7 @@
         "@schematics/angular:directive": {
           "standalone": false
         },
+
         "@schematics/angular:pipe": {
           "standalone": false
         }
@@ -33,6 +35,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              
               {
                 "glob": "**/*",
                 "input": "public"
