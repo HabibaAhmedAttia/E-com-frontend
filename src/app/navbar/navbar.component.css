@@ -1,0 +1,76 @@
+
+.main-menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333; /* You can adjust the background color */
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    padding: 15px 0; /* Adjust padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for separation */
+  }
+  
+  /* Adjust the body or main content to not be hidden under the fixed navbar */
+  body {
+    padding-top: 60px; /* Adjust according to the height of your navbar */
+  }
+  
+  .main-menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .main-menu a:hover {
+    color: #6a6a69; /* Change the hover color */
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+  }
+
+/* Navbar links hover effect */
+.main-menu a:hover {
+    color: #a6a6a6;
+    /* Lighter orange when hovered */
+    transform: scale(1.1);
+    /* Slightly enlarge text on hover */
+}
+
+
+/* Mobile menu (display on small screens) */
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Show mobile menu icon */
+    .mobile-menu {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    /* Hide regular menu on small screens */
+    .main-menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Show menu when active */
+    .main-menu ul.active {
+        display: flex;
+    }
+
+    /* Mobile menu links */
+    .main-menu ul li a {
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+    }
+}

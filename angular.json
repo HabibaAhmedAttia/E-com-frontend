@@ -4,7 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "app-1": {
-
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -13,7 +12,6 @@
         "@schematics/angular:directive": {
           "standalone": false
         },
-
         "@schematics/angular:pipe": {
           "standalone": false
         }
@@ -35,7 +33,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              
               {
                 "glob": "**/*",
                 "input": "public"
@@ -43,7 +40,15 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/bootstrap/css/bootstrap.min.css",
+              "src/assets/css/all.min.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/meanmenu.min.css",
+              "src/assets/css/main.css",
+              "src/assets/css/responsive.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -97,7 +102,6 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              
               {
                 "glob": "**/*",
                 "input": "public"
